@@ -1,0 +1,135 @@
+/* Material Color Scheme */
+$rosso: rgb(150,45,62)
+$grigio-d: rgb(52,54,66)
+$grigio-l: rgb(151,156,156)
+$panna: rgb(243,235,199)
+$celeste: rgb(52,136,153)
+
+:root
+  font-family: 'Roboto', sans-serif
+  font-size: 14px
+  color: rgb(255,255,255)
+  margin: 0
+  padding: 0
+
+.container
+  background-color: $grigio-l
+  //padding: 0 .5rem 0 .5rem
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+header
+  background-color: $rosso
+  background: url(../img/header-background.jpg) no-repeat center center
+  background-size: cover
+  min-height: 100vh
+
+  .top-nav
+    background-color: $celeste
+    min-height: 90px
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: flex-end
+    padding: .3em .8em .3em .8em
+
+  .logo
+    //background-color: $grigio-d
+    flex: 0 1
+    margin-right: calc((50vw - 39px) - 1.6em)
+    align-self: center
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+
+  .logo-icona
+    max-width: 52px
+    height: 60px
+    fill: rgb(255,255,255)
+
+  .menu
+    @extend .logo
+    //background-color: $rosso
+    margin-right: 0
+
+  .menu-icona
+    max-width: 32px
+    height: 26px
+    fill: rgb(255,255,255)
+
+  @media screen and (min-width: 480px)
+    .top-nav
+      justify-content: space-around
+
+main
+  background-color: $panna
+  min-height: 300px
+  display: flex
+  flex-direction: column
+
+  .last-minute
+    min-width: 300px
+    min-height: 120px
+    background-color: $celeste
+    border-bottom: 1px solid rgba($panna, .5)
+
+footer
+  //background-color: $grigio-d
+  min-height: 80px
+  display: flex
+  flex-direction: column
+  background-color: rgba($celeste, .5)
+  font-size: 1.2em
+
+  .indirizzo
+    background-color: $celeste
+  .lingua
+    //background-color: $panna
+    display: flex
+    flex-direction: row
+    justify-content: center
+    font-size: 1.2em
+    font-weight: bold
+    text-transform: uppercase
+    letter-spacing: .2em
+
+    li
+      height: 50px
+
+    li:first-child, :nth-child(2)
+      border-right: 1px solid rgba($panna, .5)
+      border-bottom:  1px solid rgba($panna, .5)
+    li:nth-child(3)
+      border-bottom: 1px solid rgba($panna, .5)
+
+  ul
+    flex: 1
+    padding: 0
+    margin: 0
+    list-style-type: none
+    //border: 1px solid darken($rosso, 25%)
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+
+  li
+    width: calc(100%  / 3)
+    display: inline-flex
+    align-items: center
+    justify-content: center
+
+  .social
+    li
+      height: 70px
+
+    li:first-child, :nth-child(2)
+      border-right: 1px solid rgba($panna, .5)
+  .credits
+    background-color: $rosso
+    padding: 0.2em
+    text-align: right
+    a:link, :active, :hover, :visited
+      text-decoration: none
+      color: currentColor

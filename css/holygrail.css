@@ -1,0 +1,68 @@
+/* Material Color Scheme */
+/* line 8, C:/Users/Marc/Desktop/progetti/animation/sass/holygrail.sass */
+:root {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, C:/Users/Marc/Desktop/progetti/animation/sass/holygrail.sass */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 18, C:/Users/Marc/Desktop/progetti/animation/sass/holygrail.sass */
+body *:not(.container) {
+  margin: 5px;
+  border-radius: 8px;
+}
+
+/* line 22, C:/Users/Marc/Desktop/progetti/animation/sass/holygrail.sass */
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3ebc7;
+}
+
+/* line 27, C:/Users/Marc/Desktop/progetti/animation/sass/holygrail.sass */
+header, nav, aside, footer {
+  background-color: #979c9c;
+  min-height: 80px;
+}
+
+/* line 31, C:/Users/Marc/Desktop/progetti/animation/sass/holygrail.sass */
+article {
+  background-color: #962d3e;
+  min-height: 300px;
+  padding: 1rem;
+}
+
+/* line 36, C:/Users/Marc/Desktop/progetti/animation/sass/holygrail.sass */
+nav, aside {
+  background-color: #348899;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 41, C:/Users/Marc/Desktop/progetti/animation/sass/holygrail.sass */
+  .container {
+    flex-direction: row;
+    min-height: 800px;
+  }
+  /* line 44, C:/Users/Marc/Desktop/progetti/animation/sass/holygrail.sass */
+  article {
+    flex: 3;
+  }
+  /* line 46, C:/Users/Marc/Desktop/progetti/animation/sass/holygrail.sass */
+  nav {
+    flex: 1;
+    order: -1;
+  }
+  /* line 49, C:/Users/Marc/Desktop/progetti/animation/sass/holygrail.sass */
+  aside {
+    flex: 1;
+  }
+}
+
+/*# sourceMappingURL=../css/holygrail.map */

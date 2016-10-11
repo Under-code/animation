@@ -1,0 +1,29 @@
+
+/* Impostazioni Generali */
+html  {	box-sizing: border-box;
+	font-family: Source Sans Pro;/*'Lato', serif;*/
+	font-size: 85.5%;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap; /* flex-direction | flex-wrap */
+  max-width: 100vw;
+  height: 100%;
+  background-color: #66f5d3;
+}
+
+.box {
+  -webkit-flex: 1 0 auto;
+-moz-flex: 1 0 auto;
+-ms-flex: 1 0 auto;
+-o-flex: 1 0 auto;
+flex: 1 0 auto; /* flex-grow | flex-shrink | flex-basis */
+}

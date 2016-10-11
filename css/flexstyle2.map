@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/flexstyle2.css",
+	"sources": [
+		"../sass/flexstyle2.sass"
+	],
+	"sourcesContent": [
+		".row {\n  background-color: rgb(198, 148, 103);\n  width: 100%;\n  display: flex;\n  flex-direction: column; }\n\n.col {\n  flex: 1;\n  background-color: rgb(128, 19, 81);\n  margin: .3em;\n  padding: 50px 0;\n  text-align: center;\n  color: rgb(229, 242, 241); }\n\n@media screen and (min-width: 600px) {\n  .row {\n    flex-direction: row; } }\n"
+	],
+	"mappings": ";AAAA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,OAAG;EACrB,KAAK,EAAE,IAAK;EACZ,OAAO,EAAE,IAAK;EACd,cAAc,EAAE,MAAO;CAAG;;;AAE5B,AAAA,IAAI,CAAC;EACH,IAAI,EAAE,CAAE;EACR,gBAAgB,EAAE,OAAG;EACrB,MAAM,EAAE,IAAK;EACb,OAAO,EAAE,MAAO;EAChB,UAAU,EAAE,MAAO;EACnB,KAAK,EAAE,OAAG;CAAkB;;AAE9B,MAAM,CAAN,MAAM,MAAM,SAAS,EAAE,KAAK;;EAC1B,AAAA,IAAI,CAAC;IACH,cAAc,EAAE,GAAI;GAAG",
+	"names": []
+}

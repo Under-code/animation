@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/holygrail.css",
+	"sources": [
+		"../sass/holygrail.sass"
+	],
+	"sourcesContent": [
+		"/* Material Color Scheme */\n$rosso: rgb(150,45,62);\n$grigio-d: rgb(52,54,66);\n$grigio-l: rgb(151,156,156);\n$panna: rgb(243,235,199);\n$celeste: rgb(52,136,153);\n\n:root {\n  font-size: 14px;\n  color: rgb(255,255,255);\n  margin: 0;\n  padding: 0; }\n\nbody {\n  margin: 0;\n  padding: 0; }\n\nbody *:not(.container) {\n  margin: 5px;\n  border-radius: 8px; }\n\n.container {\n  display: flex;\n  flex-direction: column;\n  background-color: $panna; }\n\nheader, footer {\n  background-color: $grigio-l;\n  min-height: 80px; }\n\narticle {\n  background-color: $rosso;\n  min-height: 300px;\n  padding: 1rem; }\n\nnav, aside {\n  @extend header;\n  background-color: $celeste; }\n\n@media screen and (min-width: 600px) {\n  .container {\n    flex-direction: row;\n    min-height: 800px; }\n  article {\n    flex: 3; }\n  nav {\n    flex: 1;\n    order: -1; }\n  aside {\n    flex: 1; } }\n"
+	],
+	"mappings": "AAAA,2BAA2B;;AAO3B,AAAA,KAAK,CAAC;EACJ,SAAS,EAAE,IAAK;EAChB,KAAK,EAAE,KAAG;EACV,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;CAAG;;;AAEhB,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;CAAG;;;AAEhB,AAAqB,IAAjB,CAAC,CAAC,AAAA,IAAK,CAAA,AAAA,UAAU,EAAE;EACrB,MAAM,EAAE,GAAI;EACZ,aAAa,EAAE,GAAI;CAAG;;;AAExB,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,IAAK;EACd,cAAc,EAAE,MAAO;EACvB,gBAAgB,EApBV,OAAG;CAoBkB;;;AAE7B,AAAA,MAAM,EASN,AATA,GASG,EAAE,AATL,KASU,EATF,AAAA,MAAM,CAAC;EACb,gBAAgB,EAxBP,OAAG;EAyBZ,UAAU,EAAE,IAAK;CAAG;;;AAEtB,AAAA,OAAO,CAAC;EACN,gBAAgB,EA9BV,OAAG;EA+BT,UAAU,EAAE,KAAM;EAClB,OAAO,EAAE,IAAK;CAAG;;;AAEnB,AAAA,GAAG,EAAE,AAAA,KAAK,CAAC;EAET,gBAAgB,EAhCR,OAAG;CAgCkB;;AAE/B,MAAM,CAAN,MAAM,MAAM,SAAS,EAAE,KAAK;;EAC1B,AAAA,UAAU,CAAC;IACT,cAAc,EAAE,GAAI;IACpB,UAAU,EAAE,KAAM;GAAG;;EACvB,AAAA,OAAO,CAAC;IACN,IAAI,EAAE,CAAE;GAAG;;EACb,AAAA,GAAG,CAAC;IACF,IAAI,EAAE,CAAE;IACR,KAAK,EAAE,EAAG;GAAG;;EACf,AAAA,KAAK,CAAC;IACJ,IAAI,EAAE,CAAE;GAAG",
+	"names": []
+}

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/sasstut.css",
+	"sources": [
+		"../sass/sasstut.sass"
+	],
+	"sourcesContent": [
+		"$bg: rgb(214, 183, 181);\n$ff: arial;\n$bp: 3rem;\n$rosso: rgb(181, 12, 52);\n$verde: rgba(26, 102, 17, 0.74);\n\n\n@function border_color($color) {\n    @return desaturate( darken($color, 20%), 25%); }\n\n@mixin alert_box( $color ) {\n  @extend .info;\n  background-color: $color;\n  border-color: border_color( $color ); }\n\nbody {\n  padding: $bp;\n  background-color: $bg;\n  font-family: $ff; }\n\n.container {\n  background: blu; }\n\nul {\n  margin: 10px;\n  padding: 10px;\n  list-style-type: none;\n\n  li {\n    display: inline-block; } }\n\n.info {\n  border: 2px solid #000;\n  border-radius: 5px;\n  padding: 15px;\n  margin: 0 auto 10px;\n  background-color: rgb(36, 96, 212);\n  border-color: blue; }\n\n.success {\n  @include alert_box($verde); }\n\n.error {\n  @include alert_box($rosso); }\n"
+	],
+	"mappings": ";AAeA,AAAA,IAAI,CAAC;EACH,OAAO,EAdJ,IAAI;EAeP,gBAAgB,EAjBb,OAAG;EAkBN,WAAW,EAjBR,KAAK;CAiBW;;;AAErB,AAAA,UAAU,CAAC;EACT,UAAU,EAAE,GAAI;CAAG;;;AAErB,AAAA,EAAE,CAAC;EACD,MAAM,EAAE,IAAK;EACb,OAAO,EAAE,IAAK;EACd,eAAe,EAAE,IAAK;CAGO;;;AAN/B,AAKE,EALA,CAKA,EAAE,CAAC;EACD,OAAO,EAAE,YAAa;CAAG;;;AAE7B,AAAA,KAAK,EAQL,AARA,QAQQ,EAGR,AAXA,MAWM,CAXA;EACJ,MAAM,EAAE,cAAe;EACvB,aAAa,EAAE,GAAI;EACnB,OAAO,EAAE,IAAK;EACd,MAAM,EAAE,WAAY;EACpB,gBAAgB,EAAE,OAAG;EACrB,YAAY,EAAE,IAAK;CAAG;;;AAExB,AAAA,QAAQ,CAAC;EA3BP,gBAAgB,EARV,uBAAI;EASV,YAAY,EALF,oBAAU;CAgCS;;;AAE/B,AAAA,MAAM,CAAC;EA9BL,gBAAgB,EATV,OAAG;EAUT,YAAY,EALF,OAAU;CAmCS",
+	"names": []
+}

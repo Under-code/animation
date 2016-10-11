@@ -1,0 +1,38 @@
+/* line 1, C:/Users/Marc/Desktop/progetti/animation/sass/style.sass */
+body {
+  padding: 50px;
+}
+
+/* line 4, C:/Users/Marc/Desktop/progetti/animation/sass/style.sass */
+.box {
+  display: inline-block;
+  background: pink;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation-name: myframes;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+/* line 18, C:/Users/Marc/Desktop/progetti/animation/sass/style.sass */
+.box.is-paused {
+  animation-play-state: paused;
+}
+
+@keyframes myframes {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=../css/style.map */

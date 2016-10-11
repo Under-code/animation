@@ -1,0 +1,50 @@
+/* Material Color Scheme */
+$rosso: rgb(150,45,62)
+$grigio-d: rgb(52,54,66)
+$grigio-l: rgb(151,156,156)
+$panna: rgb(243,235,199)
+$celeste: rgb(52,136,153)
+
+:root
+  font-size: 14px
+  color: rgb(255,255,255)
+  margin: 0
+  padding: 0
+
+body
+  margin: 0
+  padding: 0
+
+body *:not(.container)
+  margin: 5px
+  border-radius: 8px
+
+.container
+  display: flex
+  flex-direction: column
+  background-color: $panna
+
+header, footer
+  background-color: $grigio-l
+  min-height: 80px
+
+article
+  background-color: $rosso
+  min-height: 300px
+  padding: 1rem
+
+nav, aside
+  @extend header
+  background-color: $celeste
+
+@media screen and (min-width: 600px)
+  .container
+    flex-direction: row
+    min-height: 800px
+  article
+    flex: 3
+  nav
+    flex: 1
+    order: -1
+  aside
+    flex: 1

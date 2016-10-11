@@ -1,0 +1,44 @@
+$bg: rgb(214, 183, 181)
+$ff: arial
+$bp: 3rem
+$rosso: rgb(181, 12, 52)
+$verde: rgba(26, 102, 17, 0.74)
+
+
+@function border_color($color)
+    @return desaturate( darken($color, 20%), 25%)
+
+@mixin alert_box( $color )
+  @extend .info
+  background-color: $color
+  border-color: border_color( $color )
+
+body
+  padding: $bp
+  background-color: $bg
+  font-family: $ff
+
+.container
+  background: blu
+
+ul
+  margin: 10px
+  padding: 10px
+  list-style-type: none
+
+  li
+    display: inline-block
+
+.info
+  border: 2px solid #000
+  border-radius: 5px
+  padding: 15px
+  margin: 0 auto 10px
+  background-color: rgb(36, 96, 212)
+  border-color: blue
+
+.success
+  @include alert_box($verde)
+
+.error
+  @include alert_box($rosso)

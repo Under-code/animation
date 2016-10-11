@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		"body {\n\tpadding: 50px; }\n\n.box {\n\tdisplay: inline-block;\n\tbackground: pink;\n\twidth: 200px;\n\theight: 200px;\n\tposition: relative;\n\tanimation-name: myframes;\n\tanimation-duration: 300ms;\n\tanimation-timing-function: ease-in-out;\n\tanimation-delay: 0s;\n\tanimation-iteration-count: 1;\n\tanimation-direction: normal;\n\tanimation-fill-mode: forwards;\n\n\t&.is-paused {\n\t\tanimation-play-state: paused; }\n\n\t@keyframes myframes {\n\t\t0% {\n\t\t\ttransform: scale(0);\n\t\t\topacity: 0; }\n\t\t100% {\n\t\t\ttransform: scale(1);\n\t\t\topacity: 1; } } }\n"
+	],
+	"mappings": ";AAAA,AAAA,IAAI,CAAC;EACJ,OAAO,EAAE,IAAK;CAAG;;;AAElB,AAAA,IAAI,CAAC;EACJ,OAAO,EAAE,YAAa;EACtB,UAAU,EAAE,IAAK;EACjB,KAAK,EAAE,KAAM;EACb,MAAM,EAAE,KAAM;EACd,QAAQ,EAAE,QAAS;EACnB,cAAc,EAAE,QAAS;EACzB,kBAAkB,EAAE,KAAM;EAC1B,yBAAyB,EAAE,WAAY;EACvC,eAAe,EAAE,EAAG;EACpB,yBAAyB,EAAE,CAAE;EAC7B,mBAAmB,EAAE,MAAO;EAC5B,mBAAmB,EAAE,QAAS;CAWV;;;AAvBrB,AAAA,IAAI,AAcF,UAAU,CAAC;EACX,oBAAoB,EAAE,MAAO;CAAG;;AAEjC,UAAU,CAAV,QAAU;EACT,AAAA,EAAE;IACD,SAAS,EAAE,QAAK;IAChB,OAAO,EAAE,CAAE;;EACZ,AAAA,IAAI;IACH,SAAS,EAAE,QAAK;IAChB,OAAO,EAAE,CAAE",
+	"names": []
+}

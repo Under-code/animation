@@ -1,0 +1,153 @@
+/* Material Color Scheme */
+:root {
+     font-family: 'Roboto', sans-serif;
+     font-size: 14px;
+     color: white;
+     margin: 0;
+     padding: 0;
+}
+
+.container {
+     background-color: #979c9c;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+header {
+     background: url(../img/header-background.jpg) no-repeat center center;
+     background-size: cover;
+     min-height: 100vh;
+}
+
+header .top-nav {
+     background-color: #348899;
+     min-height: 80px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+     padding: 0 15px;
+}
+
+header .login, header .logo, header .menu {
+     flex: 0 1;
+     align-self: center;
+     display: inline-flex;
+     align-items: baseline;
+     justify-content: center;
+     cursor: pointer;
+}
+
+header .login-icona {
+     max-width: 32px;
+     height: 26px;
+}
+
+header .logo-icona {
+     max-width: 52px;
+     height: 50px;
+     fill: white;
+}
+
+header .menu {
+     margin-right: 0;
+}
+
+header .menu-icona {
+     max-width: 32px;
+     height: 26px;
+     fill: white;
+}
+
+main {
+     background-color: #f3ebc7;
+     min-height: 300px;
+     display: flex;
+     flex-direction: column;
+}
+
+main .last-minute {
+     min-width: 300px;
+     min-height: 150px;
+     background-color: #348899;
+     border-bottom: 1px solid rgba(243, 235, 199, 0.5);
+}
+
+footer {
+     min-height: 80px;
+     display: flex;
+     flex-direction: column;
+     background-color: rgba(52, 136, 153, 0.5);
+     font-size: 1.2em;
+}
+
+footer .indirizzo {
+     background-color: #348899;
+}
+
+footer .lingua {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     font-weight: bold;
+     text-transform: uppercase;
+     letter-spacing: .2em;
+}
+
+footer .lingua li {
+     height: 50px;
+}
+
+footer .lingua li:first-child, footer .lingua :nth-child(2) {
+     border-right: 1px solid rgba(243, 235, 199, 0.5);
+     border-bottom: 1px solid rgba(243, 235, 199, 0.5);
+}
+
+footer .lingua li:nth-child(3) {
+     border-bottom: 1px solid rgba(243, 235, 199, 0.5);
+}
+
+footer ul {
+     flex: 1;
+     padding: 0;
+     margin: 0;
+     list-style-type: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+
+footer li {
+     width: calc(100%  / 3);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+}
+
+footer .social li {
+     height: 70px;
+}
+
+footer .social li:first-child, footer .social :nth-child(2) {
+     border-right: 1px solid rgba(243, 235, 199, 0.5);
+}
+
+footer .social #fb-icona, footer .social #tw-icona, footer .social #in-icona {
+     width: 60px;
+     height: 70px;
+     fill: white;
+}
+
+footer .credits {
+     background-color: #348899;
+     padding: 0 15px;
+     text-align: right;
+     font-size: .7em;
+     font-style: italic;
+}
+
+footer .credits a:link, footer .credits :active, footer .credits :hover, footer .credits :visited {
+     text-decoration: none;
+     color: currentColor;
+}

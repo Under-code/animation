@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/flexstyle.css",
+	"sources": [
+		"../sass/flexstyle.sass"
+	],
+	"sourcesContent": [
+		".contenitore {\n  background-color: rgb(148, 28, 127);\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center; }\n\n.item {\n  background-color: rgb(64, 166, 114);\n  margin: 5px;\n  padding: 50px;\n  //height: 100px\n  flex: 1; }\n\n.item-2x {\n  @extend .item;\n  flex: 2; }\n"
+	],
+	"mappings": ";AAAA,AAAA,YAAY,CAAC;EACX,gBAAgB,EAAE,OAAG;EACrB,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,KAAM;EACd,OAAO,EAAE,IAAK;EACd,cAAc,EAAE,GAAI;EACpB,eAAe,EAAE,aAAc;EAC/B,WAAW,EAAE,MAAO;CAAG;;;AAEzB,AAAA,KAAK,EAOL,AAPA,QAOQ,CAPF;EACJ,gBAAgB,EAAE,OAAG;EACrB,MAAM,EAAE,GAAI;EACZ,OAAO,EAAE,IAAK;EAEd,IAAI,EAAE,CAAE;CAAG;;;AAEb,AAAA,QAAQ,CAAC;EAEP,IAAI,EAAE,CAAE;CAAG",
+	"names": []
+}

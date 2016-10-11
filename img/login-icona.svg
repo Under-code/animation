@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="login-icona" viewBox="0 0 32 26" class="login-icona">
+  <style>
+    .st0{fill:none;stroke:#FFF;stroke-width:2;stroke-miterlimit:2;}
+  </style>
+  <path id="semicerchio" d="M29.5 25c-.3-7.3-6.2-13-13.5-13S2.8 17.6 2.5 25" class="st0"/>
+  <circle id="ellisse" cx="16" cy="6.5" r="5.5" class="st0"/>
+</svg>
